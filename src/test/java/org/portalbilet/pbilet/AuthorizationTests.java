@@ -1,5 +1,6 @@
 package org.portalbilet.pbilet;
 
+import jdk.jfr.Label;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -15,6 +16,7 @@ public class AuthorizationTests extends Base {
     LoginPage l = new LoginPage();
 
     @Test
+    @Label("Авторизация по валидным данным")
     public void validLogin() throws InterruptedException {
         driver.get(BASE_URL);
         driver.findElement(By.xpath(l.loginBtn)).click();
@@ -27,6 +29,7 @@ public class AuthorizationTests extends Base {
     }
 
     @Test
+    @Label("Авторизация по невалидному паролю")
     public void invalidLogin() throws InterruptedException {
         driver.get(BASE_URL);
         driver.findElement(By.xpath(l.loginBtn)).click();
