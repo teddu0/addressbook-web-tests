@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class AuthorizationTests extends Base {
+public class AuthorizationTests extends BaseSelenium {
 
     private final static String BASE_URL = "https://portalbilet.pbilet.org/en/login";
     private final static String EMAIL = "testeam@internet.ru";

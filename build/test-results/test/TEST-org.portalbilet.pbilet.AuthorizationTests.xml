@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.portalbilet.pbilet.AuthorizationTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-06-15T22:11:58" hostname="LOFT" time="9.032">
+<testsuite name="org.portalbilet.pbilet.AuthorizationTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-06-16T08:28:53" hostname="LOFT" time="9.175">
   <properties/>
-  <testcase name="invalidLogin" classname="org.portalbilet.pbilet.AuthorizationTests" time="4.034"/>
-  <testcase name="validLogin" classname="org.portalbilet.pbilet.AuthorizationTests" time="4.996"/>
+  <testcase name="invalidLogin" classname="org.portalbilet.pbilet.AuthorizationTests" time="4.196"/>
+  <testcase name="validLogin" classname="org.portalbilet.pbilet.AuthorizationTests" time="4.978"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
