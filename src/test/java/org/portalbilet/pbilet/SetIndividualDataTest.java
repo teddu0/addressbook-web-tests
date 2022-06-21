@@ -8,6 +8,8 @@ public class SetIndividualDataTest extends BaseSeleniumTest {
     public void setPaymentInfoForIndividualUser() throws InterruptedException {
         // Переход в раздел заполнения данныех для выплат
         setIndividualInfo();
+        // Очистка полей
+        Thread.sleep(5000);
         // Заполнение данных для физ лица
         enterParamsForIndividual("Anriano Smoke", "Iron Roads", "123", "3-34-45", "langress@hmail.com", "23.06.1992", "1221 321321");
         // Сохранение формы и сравнение результата

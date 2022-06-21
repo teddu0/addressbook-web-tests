@@ -7,5 +7,4 @@ import static org.portalbilet.pbilet.BaseSeleniumPage.driver;
 
 public class UserPage {
 
-    //пока пустой класс
 }

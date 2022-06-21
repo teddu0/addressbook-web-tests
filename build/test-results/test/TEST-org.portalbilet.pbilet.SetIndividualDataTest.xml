@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.portalbilet.pbilet.SetIndividualDataTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-06-21T17:44:40" hostname="LOFT" time="12.001">
+<testsuite name="org.portalbilet.pbilet.SetIndividualDataTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-06-21T18:44:00" hostname="LOFT" time="16.028">
   <properties/>
-  <testcase name="setPaymentInfoForIndividualUser" classname="org.portalbilet.pbilet.SetIndividualDataTest" time="5.826"/>
-  <testcase name="setPaymentInfoForLegalUser" classname="org.portalbilet.pbilet.SetIndividualDataTest" time="6.173"/>
+  <testcase name="setPaymentInfoForIndividualUser" classname="org.portalbilet.pbilet.SetIndividualDataTest" time="10.141"/>
+  <testcase name="setPaymentInfoForLegalUser" classname="org.portalbilet.pbilet.SetIndividualDataTest" time="5.885"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

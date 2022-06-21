@@ -2,6 +2,7 @@ package org.portalbilet.pbilet;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,11 +12,13 @@ import org.testng.annotations.BeforeTest;
 
 import java.util.concurrent.TimeUnit;
 
+import static org.openqa.selenium.Keys.*;
+
 public class BaseSeleniumTest {
     public WebDriver driver;
     private final static String BASE_URL = "https://portalbilet.pbilet.org/en/login";
-    private final static String EMAIL = "testeam@internet.ru";
-    private final static String CORRECT_PASSWORD = "testeam@internet.ru";
+    private final static String EMAIL = "k.volkov@portalbilet.ru";
+    private final static String CORRECT_PASSWORD = "Langress23";
     LoginPage l = new LoginPage();
 
     @BeforeTest
@@ -43,24 +46,24 @@ public class BaseSeleniumTest {
     }
     // Поля формы для физ. лиц
     public void enterParamsForIndividual(String name, String address, String bank_details, String phone_number, String email, String date_of_birth, String passport_data){
-        driver.findElement(By.name("name")).sendKeys(name);
-        driver.findElement(By.name("address")).sendKeys(address);
-        driver.findElement(By.name("bank_details")).sendKeys(bank_details);
-        driver.findElement(By.name("phone_number")).sendKeys(phone_number);
-        driver.findElement(By.name("email")).sendKeys(email);
-        driver.findElement(By.name("date_of_birth")).sendKeys(date_of_birth);
-        driver.findElement(By.name("passport_data")).sendKeys(passport_data);
+        driver.findElement(By.name("name")).sendKeys(Keys.SHIFT, HOME, BACK_SPACE, (name));;
+        driver.findElement(By.name("address")).sendKeys(Keys.SHIFT, HOME, BACK_SPACE, (address));
+        driver.findElement(By.name("bank_details")).sendKeys(Keys.SHIFT, HOME, BACK_SPACE, (bank_details));
+        driver.findElement(By.name("phone_number")).sendKeys(Keys.SHIFT, HOME, BACK_SPACE, (phone_number));
+        driver.findElement(By.name("email")).sendKeys(Keys.SHIFT, HOME, BACK_SPACE, (email));
+        driver.findElement(By.name("date_of_birth")).sendKeys(Keys.SHIFT, HOME, BACK_SPACE, (date_of_birth));
+        driver.findElement(By.name("passport_data")).sendKeys(Keys.SHIFT, HOME, BACK_SPACE, (passport_data));
     }
 
     // Поля формы для юр. лиц
     public void enterParamsForLegals(String name, String registration_number, String address, String document_name, String bank_details, String phone_number, String email){
-        driver.findElement(By.name("name")).sendKeys(name);
-        driver.findElement(By.name("registration_number")).sendKeys(registration_number);
-        driver.findElement(By.name("address")).sendKeys(address);
-        driver.findElement(By.name("document_name")).sendKeys(document_name);
-        driver.findElement(By.name("bank_details")).sendKeys(bank_details);
-        driver.findElement(By.name("phone_number")).sendKeys(phone_number);
-        driver.findElement(By.name("email")).sendKeys(email);
+        driver.findElement(By.name("name")).sendKeys(Keys.SHIFT, HOME, BACK_SPACE, (name));
+        driver.findElement(By.name("registration_number")).sendKeys(Keys.SHIFT, HOME, BACK_SPACE, (registration_number));
+        driver.findElement(By.name("address")).sendKeys(Keys.SHIFT, HOME, BACK_SPACE, (address));
+        driver.findElement(By.name("document_name")).sendKeys(Keys.SHIFT, HOME, BACK_SPACE, (document_name));
+        driver.findElement(By.name("bank_details")).sendKeys(Keys.SHIFT, HOME, BACK_SPACE, (bank_details));
+        driver.findElement(By.name("phone_number")).sendKeys(Keys.SHIFT, HOME, BACK_SPACE, (phone_number));
+        driver.findElement(By.name("email")).sendKeys(Keys.SHIFT, HOME, BACK_SPACE, (email));
     }
 
     // Кнопка сохрания формы и получение флажка уведомления о сохранении поля
