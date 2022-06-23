@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.portalbilet.pbilet.SetIndividualDataTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-06-21T18:48:58" hostname="LOFT" time="11.434">
-  <properties/>
-  <testcase name="setPaymentInfoForIndividualUser" classname="org.portalbilet.pbilet.SetIndividualDataTest" time="5.677"/>
-  <testcase name="setPaymentInfoForLegalUser" classname="org.portalbilet.pbilet.SetIndividualDataTest" time="5.755"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
