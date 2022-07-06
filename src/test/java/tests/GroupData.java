@@ -11,13 +11,15 @@ public class GroupData {
         this.footer = footer;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
-    public String getHeader(){
+
+    public String getHeader() {
         return header;
     }
-    public String getFooter(){
+
+    public String getFooter() {
         return footer;
     }
 }

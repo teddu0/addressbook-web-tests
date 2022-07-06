@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.GroupCreationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-06-28T22:07:59" hostname="LOFT" time="2.401">
-  <properties/>
-  <testcase name="testGroupCreation" classname="tests.GroupCreationTest" time="2.401"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
