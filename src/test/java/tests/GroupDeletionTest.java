@@ -6,10 +6,10 @@ public class GroupDeletionTest extends TestBase {
 
     @Test
     public void testGroupDeletion() throws InterruptedException {
-        app.goToGroupPage();
-        app.selectGroup();
-        app.deleteSelectedGroups();
-        app.returnToGroupForm();
+        app.getNavigationHelper().goToGroupPage();
+        app.getGroupHelper().selectGroup();
+        app.getGroupHelper().deleteSelectedGroups();
+        app.getGroupHelper().returnToGroupForm();
         Thread.sleep(2000);
     }
 }
