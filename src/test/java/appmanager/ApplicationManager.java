@@ -12,17 +12,17 @@ import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
 
-    JavascriptExecutor js;
+    //JavascriptExecutor js;
     public WebDriver driver;
-    private Map<String, Object> vars;
+    //private Map<String, Object> vars;
 
-    private GroupHelper groupHelper;
+    public GroupHelper groupHelper;
     private NavigationHelper navigationHelper;
     private SessionHelper sessionHelper;
     public void init() {
         driver = new ChromeDriver();
-        js = (JavascriptExecutor) driver;
-        vars = new HashMap<String, Object>();
+        //js = (JavascriptExecutor) driver;
+        //vars = new HashMap<String, Object>();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
