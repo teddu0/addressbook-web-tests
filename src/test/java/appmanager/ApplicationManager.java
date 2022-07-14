@@ -1,13 +1,8 @@
 package appmanager;
 
-import model.GroupData;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
@@ -19,6 +14,7 @@ public class ApplicationManager {
     public GroupHelper groupHelper;
     private NavigationHelper navigationHelper;
     private SessionHelper sessionHelper;
+
     public void init() {
         driver = new ChromeDriver();
         //js = (JavascriptExecutor) driver;
@@ -33,7 +29,7 @@ public class ApplicationManager {
         sessionHelper.login("admin", "secret");
     }
 
-    public void stop(){
+    public void stop() {
         driver.close();
         driver.quit();
     }
