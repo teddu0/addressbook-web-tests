@@ -9,7 +9,7 @@ public class HelperBase {
         this.driver = webDriver;
     }
 
-    public void type (By locator, String text) {
+    public void type (By locator, String text) { // попросить от Вани ликбез по "параметризованности"
         driver.findElement(locator).click();
         driver.findElement(locator).clear();
         driver.findElement(locator).sendKeys(text);
