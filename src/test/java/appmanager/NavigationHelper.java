@@ -5,11 +5,12 @@ import org.openqa.selenium.WebDriver;
 
 public class NavigationHelper extends HelperBase {
 
-    public NavigationHelper (WebDriver webDriver) {
+    public NavigationHelper(WebDriver webDriver) {
         super(webDriver);
     }
+
     public void goToGroupPage() {
-        driver.findElement(By.xpath("//a[@href='group.php']")).click();
+        click(By.xpath("//a[@href='group.php']"));
     }
 
 }

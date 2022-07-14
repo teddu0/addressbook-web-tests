@@ -7,9 +7,10 @@ import org.openqa.selenium.WebDriver;
 public class GroupHelper extends HelperBase {
 
 
-   public GroupHelper (WebDriver webDriver){
+    public GroupHelper(WebDriver webDriver) {
         super(webDriver);
-   }
+    }
+
     public void initGroupCreation() {
         click(By.xpath("//input[@name='new']"));
     }
@@ -21,7 +22,7 @@ public class GroupHelper extends HelperBase {
     }
 
     public void submitGroupCreation() {
-       click(By.name("submit"));
+        click(By.name("submit"));
     }
 
     public void returnToGroupForm() {
@@ -33,13 +34,14 @@ public class GroupHelper extends HelperBase {
     }
 
     public void deleteSelectedGroups() {
-       click(By.name("delete"));
+        click(By.name("delete"));
     }
 
     public void initGroupModification() {
-       click(By.xpath("//input[@value='Edit group'][1]"));
+        click(By.xpath("//input[@value='Edit group'][1]"));
     }
-    public void submitGroupModification (){
-       click(By.xpath("//input[@value='Update']"));
+
+    public void submitGroupModification() {
+        click(By.xpath("//input[@value='Update']"));
     }
 }
