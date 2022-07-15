@@ -16,7 +16,7 @@ public class ContactData {
     public String getFirstName() {
         return firstName;
     }
-    public String getLastNameName() {
+    public String getLastName() {
         return lastName;
     }
     public String getAddress() {

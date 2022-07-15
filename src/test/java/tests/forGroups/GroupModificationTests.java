@@ -1,7 +1,8 @@
-package tests;
+package tests.forGroups;
 
 import model.GroupData;
 import org.testng.annotations.Test;
+import tests.TestBase;
 
 public class GroupModificationTests extends TestBase {
 
