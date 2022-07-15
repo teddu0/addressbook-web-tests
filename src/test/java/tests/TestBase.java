@@ -1,19 +1,19 @@
 package tests;
 
 import appmanager.ApplicationManager;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
 public class TestBase {
 
     public final ApplicationManager app = new ApplicationManager();
 
-    @BeforeTest
+    @BeforeMethod(alwaysRun = true)
     public void setUp() {
         app.init();
     }
 
-    @AfterTest
+    @AfterMethod(alwaysRun = true)
     public void tearDown() {
         app.stop();
     }

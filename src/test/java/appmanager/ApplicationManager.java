@@ -1,6 +1,5 @@
 package appmanager;
 
-import org.checkerframework.checker.units.qual.C;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -24,7 +23,7 @@ public class ApplicationManager {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        driver.get("http://localhost/addressbook/group.php");
+        driver.get("http://localhost/addressbook");
         groupHelper = new GroupHelper(driver);
         navigationHelper = new NavigationHelper(driver);
         sessionHelper = new SessionHelper(driver);
@@ -33,7 +32,7 @@ public class ApplicationManager {
     }
 
     public void stop() {
-        driver.close();
+        //driver.close();
         driver.quit();
     }
 
@@ -44,5 +43,8 @@ public class ApplicationManager {
     public NavigationHelper getNavigationHelper() {
         return navigationHelper;
     }
-    public ContactHelper getContactHelper() { return contactHelper;}
+
+    public ContactHelper getContactHelper() {
+        return contactHelper;
+    }
 }

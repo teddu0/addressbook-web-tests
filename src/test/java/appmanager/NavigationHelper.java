@@ -13,4 +13,7 @@ public class NavigationHelper extends HelperBase {
         click(By.xpath("//a[@href='group.php']"));
     }
 
+    public void goToHomePage() {
+        click(By.xpath("//a[@href='./']"));
+    }
 }
