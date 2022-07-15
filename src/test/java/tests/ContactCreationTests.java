@@ -1,4 +1,4 @@
-package tests.forContacts;
+package tests;
 
 import model.ContactData;
 import org.checkerframework.checker.units.qual.C;

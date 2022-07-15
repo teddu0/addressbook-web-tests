@@ -1,4 +1,4 @@
-package tests.forGroups;
+package tests;
 
 import model.GroupData;
 import org.testng.annotations.Test;
