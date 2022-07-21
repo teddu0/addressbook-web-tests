@@ -1,11 +1,21 @@
 package appmanager;
 
+import com.beust.ah.A;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.remote.Browser;
+import org.openqa.selenium.remote.BrowserType;
 
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
+
+    private String browser;
+
+    public ApplicationManager(String browser){
+        this.browser = browser;
+    }
 
     //JavascriptExecutor js;
     public WebDriver driver;
@@ -17,7 +27,11 @@ public class ApplicationManager {
     private ContactHelper contactHelper;
 
     public void init() {
-        driver = new ChromeDriver();
+        if(browser == BrowserType.EDGE) {
+            driver = new EdgeDriver();
+        }else {
+            driver = new ChromeDriver();
+        }
         //js = (JavascriptExecutor) driver;
         //vars = new HashMap<String, Object>();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
