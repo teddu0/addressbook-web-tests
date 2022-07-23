@@ -8,7 +8,7 @@ public class ContactModificationTests extends TestBase {
     public void testContactModification() throws InterruptedException {
         app.getNavigationHelper().goToHomePage();
         app.getContactHelper().editContact();
-        app.getContactHelper().fillContactForm(new ContactData("Mod1", "Mod2", "Mod3"));
+        app.getContactHelper().fillContactForm(new ContactData("Hello", null, null));
         app.getContactHelper().submitContactModification();
         app.getContactHelper().returnToMainPage();
         Thread.sleep(2000);

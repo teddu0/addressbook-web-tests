@@ -15,7 +15,7 @@ public class ContactHelper extends HelperBase {
 
     public void fillContactForm(ContactData contactData) {
         type(By.xpath("//input[@name='firstname']"), contactData.getFirstName());
-        type(By.xpath("//input[@name='lastname']"), contactData.getFirstName());
+        type(By.xpath("//input[@name='lastname']"), contactData.getLastName());
         type(By.xpath("//textarea[@name='address']"), contactData.getAddress());
     }
 
