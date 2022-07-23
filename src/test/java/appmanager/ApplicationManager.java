@@ -27,7 +27,7 @@ public class ApplicationManager {
     private ContactHelper contactHelper;
 
     public void init() {
-        if(browser == BrowserType.EDGE) {
+        if(browser.equals(BrowserType.EDGE)) {
             driver = new EdgeDriver();
         }else {
             driver = new ChromeDriver();
