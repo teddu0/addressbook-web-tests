@@ -11,14 +11,9 @@ public class HelperBase {
     }
 
     public void type(By locator, String text) {
-        if (text != null) {
-            String existingText = driver.findElement(locator).getAttribute("value");
-            if (! text.equals(existingText)){
-                driver.findElement(locator).click();
-                driver.findElement(locator).clear();
-                driver.findElement(locator).sendKeys(text);
-            }
-        }
+        driver.findElement(locator).click();
+        driver.findElement(locator).clear();
+        driver.findElement(locator).sendKeys(text);
     }
 
     public void click(By locator) {
