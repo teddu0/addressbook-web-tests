@@ -34,7 +34,7 @@ public class ApplicationManager {
         }
         //js = (JavascriptExecutor) driver;
         //vars = new HashMap<String, Object>();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get("http://localhost/addressbook");

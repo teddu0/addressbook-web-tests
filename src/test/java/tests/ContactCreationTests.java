@@ -8,7 +8,7 @@ public class ContactCreationTests extends TestBase {
     public void testContactCreation() throws InterruptedException {
         app.getNavigationHelper().goToHomePage();
         app.getContactHelper().initContactCreation();
-        app.getContactHelper().fillContactForm(new ContactData("Test1", "Test2", "Test3"));
+        app.getContactHelper().fillContactForm(new ContactData("Test1", "Test2", "Test3", "Test1"), true);
         app.getContactHelper().submitContactCreation();
         app.getContactHelper().returnToMainPage();
         Thread.sleep(3000);
