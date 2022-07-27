@@ -57,4 +57,15 @@ public class ContactHelper extends HelperBase {
     public void submitAlert() {
         driver.switchTo().alert().accept();
     }
+
+    public void createContact(ContactData contact) {
+        initContactCreation();
+        fillContactForm(contact, true);
+        submitContactCreation();
+        returnToMainPage();
+    }
+
+    public boolean isThereAContact() {
+        return isElementPresent(By.xpath("//input[@name='selected[]']"));
+    }
 }
