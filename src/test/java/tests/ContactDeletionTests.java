@@ -1,17 +1,24 @@
 package tests;
 
 import model.ContactData;
+import model.GroupData;
 import org.testng.annotations.Test;
 
 public class ContactDeletionTests extends TestBase {
     @Test
     public void testDeletionContact() throws InterruptedException {
+        app.getNavigationHelper().goToGroupPage();
+        Thread.sleep(2000);
+        if(! app.getGroupHelper().isThereAGroup()) {
+            app.getGroupHelper().createGroup(new GroupData("Test1", "Test2","Test3"));
+        }
+        Thread.sleep(2000);
         app.getNavigationHelper().goToHomePage();
         if(! app.getContactHelper().isThereAContact()) {
             app.getContactHelper().createContact(new ContactData("Test1", "Test1", "Test1","Test1"));
         }
         app.getContactHelper().selectContact();
         app.getContactHelper().deleteSelectionContact();
-        Thread.sleep(3000);
+        Thread.sleep(2000);
     }
 }
