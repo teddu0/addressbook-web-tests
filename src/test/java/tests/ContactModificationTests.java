@@ -8,7 +8,6 @@ public class ContactModificationTests extends TestBase {
     @Test
     public void testContactModification() throws InterruptedException {
         app.getNavigationHelper().goToGroupPage();
-        Thread.sleep(2000);
         if(! app.getGroupHelper().isThereAGroup()) {
             app.getGroupHelper().createGroup(new GroupData("Test1", "Test2","Test3"));
         }
